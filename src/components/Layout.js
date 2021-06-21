@@ -28,6 +28,7 @@ class Layout extends React.Component {
             ...scale(0.75),
             marginBottom: 0,
             marginTop: 0,
+            fontFamily: `Recoleta, Montserrat, sans-serif`,
           }}
         >
           <Link
@@ -83,7 +84,7 @@ class Layout extends React.Component {
           meta={[
             {
               name: 'theme-color',
-              content: this.state.theme === 'light' ? '#ffa8c5' : '#282c35',
+              content: this.state.theme === 'light' ? '#f18f01' : '#f18f01',
             },
           ]}
         />

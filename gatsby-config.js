@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ratul's Blog`,
     author: `Ratul Maharaj`,
-    description: `Personal blog by Ratul Maharaj. I explain with words and code.`,
+    description: `Personal blog by Ratul Maharaj. Wasting time wisely.`,
     siteUrl: `https://blog.ratulmaharaj.com`,
     social: {
       twitter: `@ratulmaharaj`,

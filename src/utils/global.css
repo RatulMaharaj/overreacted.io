@@ -218,7 +218,7 @@ pre[data-line] {
 }
 
 .gatsby-highlight-code-line {
-  background-color: hsla(207, 95%, 15%, 1);
+  background-color: #303238a4;
   display: block;
   margin-right: -1.3125rem;
   margin-left: -1.3125rem;
@@ -232,7 +232,7 @@ pre[data-line] {
   margin-left: -1.3125rem;
   margin-right: -1.3125rem;
   border-radius: 10px;
-  background: #011627;
+  background: #212229;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
