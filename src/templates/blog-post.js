@@ -151,7 +151,13 @@ class BlogPostTemplate extends React.Component {
         <main>
           <article>
             <header>
-              <h1 style={{ color: 'var(--textTitle)' }}>
+              <h1
+                style={{
+                  color: 'var(--textTitle)',
+                  fontFamily: 'Recoleta, Montserrat, sans-serif',
+                  fontWeight: '700',
+                }}
+              >
                 {post.frontmatter.title}
               </h1>
               <p
@@ -199,7 +205,7 @@ class BlogPostTemplate extends React.Component {
           </div>
           <h3
             style={{
-              fontFamily: 'Montserrat, sans-serif',
+              fontFamily: 'Recoleta, Montserrat, sans-serif',
               marginTop: rhythm(0.25),
             }}
           >
