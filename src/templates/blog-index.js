@@ -27,11 +27,7 @@ class BlogIndexTemplate extends React.Component {
           {langKey !== 'en' && langKey !== 'ru' && (
             <Panel>
               These articles have been{' '}
-              <a
-                href="https://github.com/gaearon/overreacted.io#contributing-translations"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 translated by the community
               </a>
               .
