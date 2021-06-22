@@ -1,5 +1,5 @@
 ---
-title: Virtual Environments in Python
+title: Virtual Environments
 date: '2020-07-16'
 spoiler: Managing project dependencies with venv
 cta: 'react'

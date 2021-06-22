@@ -13,10 +13,10 @@ class Signup extends React.Component {
       case 'react':
         form = {
           id: REACT_COMPONENTS_FORM_ID,
-          title: 'Learn to Build Resilient React Components',
+          title: `Let's connect!`,
           subTitle:
-            'Get a one week email course and learn how I think about writing React components based on 4 Principles.',
-          buttonText: 'Start Learning',
+            'Want to ask me a question or share your thoughts about this post with me? Drop me a line.',
+          buttonText: 'Send Message',
         };
         break;
       default:
@@ -136,6 +136,22 @@ class Signup extends React.Component {
                   }}
                 />
               </div>
+              <div className="formkit-field">
+                <input
+                  className="formkit-input"
+                  name="message"
+                  aria-label="Your message"
+                  placeholder="Your message"
+                  required
+                  type="message"
+                  style={{
+                    borderColor: 'rgb(227, 227, 227)',
+                    borderRadius: '4px',
+                    color: 'rgb(0, 0, 0)',
+                    fontWeight: 400,
+                  }}
+                />
+              </div>
               <button
                 data-element="submit"
                 className="formkit-submit formkit-submit"
@@ -158,12 +174,7 @@ class Signup extends React.Component {
                 fontSize: '13px',
                 fontWeight: 400,
               }}
-            >
-              <p>I won’t send you spam.</p>
-              <p>
-                Unsubscribe at <em>any</em> time.
-              </p>
-            </div>
+            ></div>
           </div>
         </div>
       </form>
