@@ -1,7 +1,8 @@
 import React from 'react';
-
+import { FaRss, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import { rhythm } from '../utils/typography';
 
+import './Footer.css';
 class Footer extends React.Component {
   render() {
     return (
@@ -9,36 +10,39 @@ class Footer extends React.Component {
         style={{
           marginTop: rhythm(2.5),
           paddingTop: rhythm(1),
+          display: `flex`,
+          fontSize: `20px`,
+          justifyContent: `space-between`,
         }}
       >
-        <div style={{ float: 'right' }}>
-          <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
-            RSS
+        <div className="social">
+          <a
+            href="https://mobile.twitter.com/ratulmaharaj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://github.com/RatulMaharaj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/RatulMaharaj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
           </a>
         </div>
-        <a
-          href="https://mobile.twitter.com/ratulmaharaj"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </a>{' '}
-        &bull;{' '}
-        <a
-          href="https://github.com/RatulMaharaj"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          linkedIn
-        </a>{' '}
-        &bull;{' '}
-        <a
-          href="https://github.com/RatulMaharaj"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>{' '}
+        <div className="rss">
+          <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+            <FaRss />
+          </a>
+        </div>
       </footer>
     );
   }
