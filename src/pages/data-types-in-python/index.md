@@ -32,13 +32,13 @@ Decimal numbers in python are represented by the `float` class. These can be pos
 Complex numbers are are represented by the `complex` class.  These are specified as (real part) + (imaginary part)j.
 
 ```python
-## integer
+# integer
 x = 3
 
-## float
+# float
 y = 2.0
 
-## complex number - j represents the imaginary part of your complex number
+# complex number - j represents the imaginary part of your complex number
 z = 1 + 3j
 ```
 
@@ -47,25 +47,25 @@ When working with complex numbers you can access the real and imaginary parts of
 Let's look at how we can perform some basic operations with these data types.
 
 ```python
-## sum of x and y
+# sum of x and y
 x + y	
 
-## difference of x and y
+# difference of x and y
 x - y	
 
-## product of x and y
+# product of x and y
 x * y	
 
-## quotient of x and y
+# quotient of x and y
 x / y	
 
-## floored quotient of x and y
+# floored quotient of x and y
 x // y	
 
-## remainder of x / y
+# remainder of x / y
 x % y	
 
-## x to the power y
+# x to the power y
 x ** y	
 ```
 
@@ -76,7 +76,7 @@ In python, it is possible to convert data types into others using various built-
 Boolean data types can take on one of two built-in values: `True` or `False`. They are used to represent truth values. Other values can also be used as 'truth' values, for example, the integers 0 and 1 in a numerical context. The built-in function `bool()` can be also used to convert any value to a Boolean, if the value can be interpreted as a truth value (see section <a href="https://docs.python.org/3.8/library/stdtypes.html#truth" target="_blank">Truth Value Testing</a> in the python docs).  Take note of the capitalization as the usage of `true` and `false` will throw errors.
 
 ```python
-## boolean values
+# boolean values
 a = True
 b = False
 
@@ -87,16 +87,16 @@ print("The type of b is: ", type(b))
 Boolean values are useful when checking if two variables have the same value or are of the same data type.
 
 ```python
-## let x be an integer
+# let x be an integer
 x = 5
 
-## let y be a floating point number
+# let y be a floating point number
 y = 5.0
 
-## check if the value of x is the same as the value of y - result is True
+# check if the value of x is the same as the value of y - result is True
 x == y
 
-## check if x and y are of the same data type - result is False
+# check if x and y are of the same data type - result is False
 type(x) == type(y)
 ```
 
@@ -109,34 +109,34 @@ Above we can see that `5` and `5.0` are seen to have the same value, but as we a
 In python, lists are synonymous with arrays declared in other languages. A key feature of a list that makes it super powerful is that it need not be homogeneous. This means that a single list may contain other data types like integers and strings or even other lists in your list. 
 
 ```python
-## create an empty list
+# create an empty list
 mylist = []
 
-## a list with various data types
+# a list with various data types
 mylist = ['Text', 23, 3.14]
 
-## a list within a list
+# a list within a list
 mylist = ['Fruit', ['apples','oranges','bananas']]
 ```
 
 Lists are also *mutable*, which means they can be altered after they have been created. The elements in a list are indexed according to a definite sequence and the indexing of a list is done with 0 being the first index. Elements in a list can easily be duplicated and/or re-ordered as needed. Lists are represented in python by the `list` class.
 
 ```python
-## create a list
+# create a list
 mylist = ['Text', 23, 3.14]
 
-## select items from the list
+# select items from the list
 mylist[0]
 mylist[1]
 mylist[2]
 
-## append item to end of the list
+# append item to end of the list
 mylist.append('New list item')
 
-## select the last item in the list
+# select the last item in the list
 last_item = mylist[-1]
 
-## remove an item from a list - also try the .pop() method
+# remove an item from a list - also try the .pop() method
 mylist.remove('Text')
 ```
 
@@ -145,17 +145,17 @@ mylist.remove('Text')
 A set in python, is very similar to a list with a few exceptions. The biggest difference being that a set only contains unique elements. Sets can be created using curly braces, with elements separated by commas. Alternatively an iterable object (such as a list, tuple or string) can be turned into a set using the `set()` function. Sets are represented by the `set` class.
 
 ```python
-## create an empty set 
+# create an empty set 
 myset = {}
 
-## convert a list into a set
+# convert a list into a set
 mylist = ['Text', 23, 3.14]
 myset = set(mylist)
 
-## a set containing various elements
+# a set containing various elements
 myset = {'a', 'b', 'c', 1, 2, 3}
 
-## a set will only keep unique values
+# a set will only keep unique values
 myset = {1, 1, 1, 2, 2, 3}
 ```
 
@@ -166,14 +166,14 @@ It is important to note that ordinary sets cannot be nested as seen above with l
 Much like the list, a tuple is an ordered collection of python objects. The sequence of values stored in a tuple can be of any type, and they are indexed by integers. A notable difference that exists between a list and a tuple is that tuples are *immutable*. Tuples can be created using round brackets, with elements separated by commas or by using the `tuple()` function. It is represented by the `tuple` class. 
 
 ```python
-## create an empty tuple  
+# create an empty tuple  
 mytuple = ()  
 
-## convert a list into a set
+# convert a list into a set
 mytuple = ('Text', 23, 3.14) 
 print(mytuple)
 
-## convert a list into a tuple
+# convert a list into a tuple
 mylist = ['Text', 23, 3.14]
 mytuple = tuple(mylist)
 ```
@@ -185,16 +185,16 @@ A string is also a sequential data type in python. It is an immutable sequence o
 <span id="dictionary"></span>
 
 ```python
-## an empty string
+# an empty string
 mystring = ""
 
-## a string with single quotes
+# a string with single quotes
 mystring = 'Hello, this is a string!'
 
-## a string with double quotes
+# a string with double quotes
 mystring = "It's useful if you need to use an apostrophe."
 
-## a string with triple quotes
+# a string with triple quotes
 mystring = ''' These are useful for
 creating strings that span
 multiple lines!
@@ -206,13 +206,13 @@ multiple lines!
 In python, a dictionary is an unordered collection of key-value pairs used to store data values. Dictionaries can be created by placing a comma-separated list of `key : value` pairs within curly braces. Dictionaries are represented by `dict` class.
 
 ```python
-## create an empty dictionary 
+# create an empty dictionary 
 mydict = {}
 
-## create a dictionary 
+# create a dictionary 
 mydict = {'abc' : ['a','b','c'], 123 : 'One-two-three', 'eight' : 8 }
 
-## create a dictionary using built-in function
+# create a dictionary using built-in function
 mylist = [('abc', ['a','b','c']), (123, 'One-two-three'), ('eight', 8)]
 mydict = dict(mylist)
 ```
@@ -220,22 +220,22 @@ mydict = dict(mylist)
 We can access the values in a dictionary by making reference to it's key name, used inside square brackets, similar to retrieving an item from a list. We can also add or remove items from a dictionary as seen below.
 
 ```python
-## create a dictionary
+# create a dictionary
 mydict = {'abc' : ['a','b','c'], 123 : 'One-two-three', 'eight' : 8 }
 
-## get the value 8
+# get the value 8
 myvalue = mydict['eight']
 
-## delete a key:value pair
+# delete a key:value pair
 del mydict[123]  
 
-## Deleting entire Dictionary  
+# Deleting entire Dictionary  
 mydict.clear()  
 
-## add new key:value pair
+# add new key:value pair
 mydict['key'] = 'value'
 
-## update a key's value
+# update a key's value
 mydict['key'] = 'A different value'
 ```
 

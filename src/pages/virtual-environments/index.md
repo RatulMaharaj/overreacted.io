@@ -56,13 +56,13 @@ In order to `pip install` packages into the virtual environment you need to firs
 From the root of your project folder, you can activate the `venv` with one of the following:
 
 ```bash
-## cmd
+# cmd
 venv\scripts\activate.bat
 
-## powershell
+# powershell
 venv\scripts\activate.ps1
 
-## bash on unix systems
+# bash on unix systems
 source ./venv/bin/activate
 ```
 
