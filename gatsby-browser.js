@@ -1,6 +1,8 @@
 // gatsby-browser.js
 import React from 'react';
 
+import '@fontsource/mulish'; // Defaults to weight 400 with all styles included.
+
 // Forked Gatsby default to not remount on switches between
 // translated versions of the same page.
 export function replaceComponentRenderer({ props, loader }) {
